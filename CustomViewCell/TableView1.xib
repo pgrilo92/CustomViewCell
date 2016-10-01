@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableView1" rowHeight="182" id="KGk-i7-Jjw" customClass="TableView1" customModule="CustomViewCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-cW-igv"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVv-uw-KpG">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="pWF-9Y-fPM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pFV-cW-igv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="B45-wh-6qc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FVv-uw-KpG" secondAttribute="trailing" constant="-8" id="LUa-G8-3mC"/>
+                    <constraint firstItem="pFV-cW-igv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="VOo-CS-NCN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FVv-uw-KpG" secondAttribute="bottom" constant="-8.5" id="WkD-Zi-ExG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pFV-cW-igv" secondAttribute="trailing" constant="-8" id="XWD-3x-1Py"/>
+                    <constraint firstItem="FVv-uw-KpG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Yh5-EA-cOz"/>
+                    <constraint firstItem="FVv-uw-KpG" firstAttribute="top" secondItem="pFV-cW-igv" secondAttribute="bottom" constant="8" id="gCi-GK-PiC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainImage" destination="pFV-cW-igv" id="NeX-YE-RUW"/>
+                <outlet property="mainLabel" destination="FVv-uw-KpG" id="hnX-n0-G5b"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="11"/>
+        </tableViewCell>
+    </objects>
+</document>
